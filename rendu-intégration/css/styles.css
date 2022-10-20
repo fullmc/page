@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../Font2/FiraSans-Bold.woff2') format('woff2'),
+        url('../Font2/FiraSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../Font2/FiraSans-Regular.woff2') format('woff2'),
+        url('../Font2/FiraSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../Font2/FiraSans-Light.woff2') format('woff2'),
+        url('../Font2/FiraSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    background-color: rgba(21, 26, 69, 0.04);;
+}
+
+/*header*/
+
+header{
+    background-color: #FFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+}
+.header__brand{
+    width:8%;
+}
+
+
+.header__nav  {
+    display:flex;
+    height:60px;
+    align-items: center;
+}
+
+.header__nav__item{
+    padding-right: 30px;
+}
+
+.header__nav__item a{
+    text-decoration: none;
+    color: #151A45;
+    font-weight: bold;
+    font-family: 'Fira Sans';
+    font-size: 13px;
+}
+
+.header__nav__item a:hover{
+    color:hsla(30, 88%, 57%, 1)
+}
+
+/*bloc principal*/
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .container{
+    padding-right: 50px;
+    padding-top:40px;
+    padding-bottom: 40px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight:600;
+    padding-bottom:30px;
+    font-family: 'Work Sans';
+    color: #151A45;
+}
+
+/*section principale*/
+
+.main__section{
+    color:#151A45;
+}
+
+.main__section p a{
+    color: #151A45;
+    font-weight: bold;
+}
+
+.main__section p{
+    padding-bottom : 15px;
+    line-height: 20px;
+    font-family: 'Fira Sans';
+}
+
+.main__section .card p{
+    padding:8px 0 1px 0;
+    font-size: 12px; 
+    color: rgba(255, 255, 255, 0.92)
+}
+.main__section ul{
+    list-style-type: circle;
+    padding-left:30px;
+    line-height: 24px;
+    font-family: 'Fira Sans';
+}
+
+.main__section .card:nth-child(3){
+    height:auto;
+}
+
+/*bouton*/
+
+button{
+    margin-top:80px;
+    border: 1px solid hsla(30, 88%, 57%, 1);
+    background-color: hsla(30, 88%, 57%, 1);
+    height: 45px;
+    border-radius: 4px;
+    width: 160px;
+    color:white;
+    font-weight: 600;
+}
+
+/*bloc de droite*/
+
+.card{
+    margin: 0 0 15px 180px;
+    border: 1px solid #151A45;
+    border-radius: 8px;
+    background-color: #151A45;
+    height: 108px;
+    width: 400px;
+    padding:15px 0 0 20px;
+}
+
+.card__title{
+    font-size:  18px;
+    font-family: 'Work Sans';
+    letter-spacing: -1px;
+    color: rgba(255, 255, 255, 0.92);
+    font-weight: bold;
+}
+
+a.card__trigger{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.92);
+    font-weight: bold;
+    font-family: 'Fira Sans';
+    font-size: 13px;
+    justify-content: right;
+    padding:10px 37px 20px 0px;
+    text-align: right;
+}
+
+.card p:nth-child(3), span:nth-child(2){
+    display:none ;  
+  }
+
+@media screen and (max-width:800px) {
+    main { 
+        max-width: 800px;
+        margin-right:-10px;
+    }
+}
